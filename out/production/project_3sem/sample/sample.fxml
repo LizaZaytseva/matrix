@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="971.0" style="-fx-background-color: ffe4c4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="1200.0" style="-fx-background-color: #FFFFF0;">
+            <menus>
+                <Menu fx:id="FileMenu" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id = "ChooseFile" mnemonicParsing="false" onAction="#openAndReadFile" text="Choose file" />
+                        <MenuItem fx:id = "Close" mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu fx:id="HelpMenu" mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id = "About" mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>
