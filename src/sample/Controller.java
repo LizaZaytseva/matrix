@@ -2,9 +2,7 @@ package sample;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
-import javafx.scene.Parent;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
@@ -15,16 +13,12 @@ import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.Pair;
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
+import sample.Logic;
 
-import javax.sound.sampled.Line;
 import java.io.*;
 import java.net.URL;
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+
 import java.util.ResourceBundle;
 
 public class Controller {
@@ -121,9 +115,9 @@ public class Controller {
             BufferedReader reader = new BufferedReader(fr);
             String line = reader.readLine();
 
-            int k = 0;//////////////////////////////
-            int str = 0;////////////////////////////
-            int stl = 0;/////////////////////////
+            int k = 0;// счетчик строк
+            int str = 0;// количество строк
+            int stl = 0;// количество столбцов
 
             //очищаем листы от старых данных
             table.clear();
